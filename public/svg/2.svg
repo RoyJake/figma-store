@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <clipPath id="clip-Instagram_Post_1">
+      <rect width="1080" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Instagram_Post_1" data-name="Instagram Post – 1" clip-path="url(#clip-Instagram_Post_1)">
+    <rect width="1080" height="1080" fill="#fff"/>
+    <g id="Path_9" data-name="Path 9" transform="translate(258 134)" fill="none">
+      <path d="M100,0H554A100,100,0,0,1,654,100V529A100,100,0,0,1,554,629H100A100,100,0,0,1,0,529V100A100,100,0,0,1,100,0Z" stroke="none"/>
+      <path d="M 100 6 C 48.16815185546875 6 6 48.16815185546875 6 100 L 6 529 C 6 580.831787109375 48.16815185546875 623 100 623 L 554 623 C 605.831787109375 623 648 580.831787109375 648 529 L 648 100 C 648 48.16815185546875 605.831787109375 6 554 6 L 100 6 M 100 0 L 554 0 C 609.2284545898438 0 654 44.77154541015625 654 100 L 654 529 C 654 584.2284545898438 609.2284545898438 629 554 629 L 100 629 C 44.77154541015625 629 0 584.2284545898438 0 529 L 0 100 C 0 44.77154541015625 44.77154541015625 0 100 0 Z" stroke="none"/>
+    </g>
+  </g>
+</svg>
