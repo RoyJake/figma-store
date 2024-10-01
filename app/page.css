@@ -1,23 +1,36 @@
-.header{
- height: 250px;
- background-color: #ffc700;
- border-bottom: 4px solid black;
+.header {
+  position: relative;
+  height: 240px;
+  background-color: #ffc700;
+  border-bottom: 4px solid black;
 }
 
-.carousel{
- display: flex;
+.carousel-container {
+  overflow: hidden;
 }
 
-.header-image-containers{
- margin-left: 20px;
+.carousel {
+  display: flex;
 }
 
-.headerSvgs{
- width: 220px;
- stroke: black;
- stroke-width: 8px;
+.header-image-containers {
+  margin-left: 20px;
 }
 
-.one-svg, .four-svg {
- width: 400px;
+.headerSvgs {
+  width: 220px;
+  stroke: black;
+  stroke-width: 8px;
+}
+
+.one-svg,
+.four-svg {
+  width: 400px;
+}
+
+.badge{
+  position: absolute;
+  top: 145px;
+  right: 20px;
+  width: 120px;
 }

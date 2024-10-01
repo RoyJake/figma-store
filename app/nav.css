@@ -1,0 +1,56 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 5px 10px;
+  height: 60px;
+  background-color: #ffc700;
+
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000;
+  border-radius: 40px;
+}
+
+.menu-bar {
+  height: 2px;
+  width: 15px;
+  background-color: #000;
+}
+
+.menuBar-top {
+  transform: translateY(-2px);
+}
+
+.menuBar-bottom {
+  transform: translateY(2px);
+}
+
+.search-icon {
+  position: absolute;
+  left: 55px;
+}
+
+.logo {
+  margin-left: 10px;
+  width: 165px;
+}
+
+.cart-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 55px;
+  border: 2px solid #000;
+  border-radius: 40px;
+
+}
