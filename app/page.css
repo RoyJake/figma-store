@@ -1,0 +1,23 @@
+.header{
+ height: 250px;
+ background-color: #ffc700;
+ border-bottom: 4px solid black;
+}
+
+.carousel{
+ display: flex;
+}
+
+.header-image-containers{
+ margin-left: 20px;
+}
+
+.headerSvgs{
+ width: 220px;
+ stroke: black;
+ stroke-width: 8px;
+}
+
+.one-svg, .four-svg {
+ width: 400px;
+}
