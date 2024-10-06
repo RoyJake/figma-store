@@ -203,6 +203,48 @@ ul.footer-socials li {
 /* //////////////////////////////////////////////////////////////////// */
 
 @media screen and (min-width: 47.9em) {
+  /* styles for the header section of the home page */
+  .header {
+    height: 50vw;
+  }
+  
+  .headerSvgs {
+    width: 45vw;
+  }
+  
+  .one-svg,
+  .four-svg {
+    width: 85vw;
+  }
+  
+  .badge {
+    top: 45vw;
+    right: 20px;
+    width: 20vw;
+  }
+
+  /* styles for the second section of the homepage */
+
+  .figmaCollection-section h1 {
+    font-size: 45px;
+    line-height: 54px;
+    padding: 130px 20px;
+  }
+  
+  .fig-collectionsSvgs {
+    margin: 0 15px;
+    height: 35px;
+    width: 35px;
+  }
+  
+  .layers-link {
+    border-bottom: 4px solid #000;
+  }
+  .components-link {
+    border-bottom: 4px solid #000;
+  }
+
+  
   /* styles for the grid section of the home page */
   .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -212,12 +254,9 @@ ul.footer-socials li {
     grid-column: 3/5;
     grid-row: 2/4;
     height: 50vw;
-    /* background-color: green; */
   }
 
-  .box_6 .grid_images {
-    height: 85%;
-  }
+  
 
   .box_7 {
     grid-column: 1/3;
@@ -225,10 +264,7 @@ ul.footer-socials li {
     height: 50vw;
   }
 
-  .box_7 .grid_images {
-    border-radius: 30px;
-    height: 85%;
-  }
+ 
 
   .box_16 {
     grid-column: 3/5;
@@ -236,45 +272,71 @@ ul.footer-socials li {
     height: 50vw;
   }
 
-  .box_16 .grid_images {
-    border-radius: 30px;
-    height: 85%;
-  }
+  
   .box_17 {
     grid-column: 1/3;
     grid-row: 7/9;
     height: 50vw;
   }
 
-  .box_17 .grid_images {
-    height: 85%;
-    border-radius: 30px;
-  }
-
-  .grid_images {
-    border-radius: 30px;
-    object-fit: cover;
-    height: 65%;
-    width: 100%;
-  }
-
-  .grid_text_box {
-    display: grid;
-    grid-template-columns: 0.8fr 0.3fr;
-    padding-top: 15px;
-  }
-
   .grid_text_box p {
-    font-family: "whyte Inktrap";
-    font-weight: 600;
-    text-transform: capitalize;
+    font-size: 20px;
   }
 
   .newSpan {
-    display: block;
+    font-weight: 400;
   }
 
-  .priceText {
-    text-align: end;
+  /* styles for the footer section of the home page */
+
+  .home-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 55px 20px;
   }
+
+  .footerLogo {
+    margin: 0 50px ;
+    height: 220px;
+    width: 220px;
+  }
+  
+  .home-footer h2 {
+    font-size: 30px;
+    margin-right: 40px;
+  }
+  
+  ul.footer-socials {
+    display: flex;
+    margin: 45px 0;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  ul.footer-socials li {
+    padding: 10px 10px;
+  }
+  
+  .home-footer button {
+    position: absolute;
+    bottom: 150px;
+    right: 60px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  
+    font-family: whyte;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 35px;
+  }
+
 }
