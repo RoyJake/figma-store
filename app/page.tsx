@@ -10,10 +10,7 @@ import {
   figmaCollectionImages,
   productName_N_Price,
 } from "./figmaCoImages.tsx";
-import {footerSvgs, footerColors} from "./footerSvg.tsx"
-
-
-
+import { footerSvgs, footerColors } from "./footerSvg.tsx";
 
 export default function Home() {
   console.log(productName_N_Price[4].noNew);
@@ -369,6 +366,7 @@ export default function Home() {
           </motion.div>
         </div>
 
+      </header>
         <svg
           width="171"
           height="171"
@@ -544,7 +542,6 @@ export default function Home() {
             ></path>
           </g>
         </svg>
-      </header>
 
       <section className="figmaCollection-section">
         <h1>
@@ -650,33 +647,43 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="home-footer" style={{backgroundColor: footerColors[Math.floor(Math.random()*4)]}}>
+      <footer
+        className="home-footer"
+        style={{ backgroundColor: footerColors[Math.floor(Math.random() * 4)] }}
+      >
         <div className="footerLogo">
-          <Image src={footerSvgs[Math.floor(Math.random()*8)].src} alt="footerlogo" height={100} width={100}/>
+          <Image
+            src={footerSvgs[Math.floor(Math.random() * 8)].src}
+            alt="footerlogo"
+            layout="fill"
+          />
         </div>
         <h2>
           OBJECTS
           <br />
           THAT INSPIRE.
         </h2>
+
         <ul className="footer-list">
           <li>FAQ</li>
           <li>Contact Us</li>
           <li>Privacy Policy</li>
           <li>Terms of Service</li>
         </ul>
-        <ul>
+
+        <ul className="footer-socials">
           <li>FIGMA</li>
           <li>TWITTER</li>
           <li>INSTAGRAM</li>
           <li>YOUTUBE</li>
         </ul>
+
         <button>
           <svg
             width="50"
             height="50"
             viewBox="0 0 50 50"
-            fill="none"
+            fill="black"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -687,9 +694,14 @@ export default function Home() {
             ></path>
           </svg>
         </button>
-        <div className="marquee">
+
+        <motion.div
+          className="marquee"
+          animate={{ x: ["0%","-100%" ] }}
+          transition={{ ease: "linear", duration: 10, repeat: Infinity  }}
+        >
           marvelously considered collection of objects for our time on figma's
-        </div>
+        </motion.div>
       </footer>
     </>
   );
