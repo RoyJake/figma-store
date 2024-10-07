@@ -366,6 +366,7 @@ export default function Home() {
           </motion.div>
         </div>
       </header>
+
       <svg
         width="171"
         height="171"
@@ -547,7 +548,7 @@ export default function Home() {
 
       <section className="figmaCollection-section">
         <h1>
-          <span>figma's</span>
+          <span>figma&#39;s</span>
           <Image
             className="fig-collectionsSvgs"
             src={figma_collections[0].src}
@@ -701,7 +702,7 @@ export default function Home() {
           animate={{ x: ["0%", "-100%"] }}
           transition={{ ease: "linear", duration: 10, repeat: Infinity }}
         >
-          marvelously considered collection of objects for our time on figma's
+          marvelously considered collection of objects for our time on figma&#39;s
         </motion.div>
       </footer>
     </>
