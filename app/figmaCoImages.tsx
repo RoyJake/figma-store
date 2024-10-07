@@ -128,7 +128,7 @@ export const productName_N_Price = [
   { name: "Figma Creater micro keyboard", price: 159, noNew: true },
   { name: "new! toolkit pin", price: 2 },
   { name: "new! best bud pin", price: 2 },
-  { name: "new! meet n' greet pin", price: 2 },
+  { name: "new! meet n greet pin", price: 2 },
   { name: "new! power points pin", price: 2 },
   { name: "new! gridlock washi tape", price: 1 },
   { name: "new! pick of the buch washi tape", price: 1 },
