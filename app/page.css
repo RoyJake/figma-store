@@ -218,7 +218,7 @@ ul.footer-socials li {
   }
   
   .badge {
-    top: 45vw;
+    top: 50vw;
     right: 20px;
     width: 20vw;
   }
@@ -318,11 +318,9 @@ ul.footer-socials li {
   }
   
   .home-footer button {
-    position: absolute;
     bottom: 150px;
     right: 60px;
-    background-color: transparent;
-    border: none;
+  
   }
   
   .marquee {
@@ -337,6 +335,31 @@ ul.footer-socials li {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 35px;
+  }
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 55.45em) {
+  .badge {
+    top: 50vw;
+    right: 20px;
+    width: 17vw;
+  }
+
+   /* styles for the second section of the homepage */
+
+   .figmaCollection-section h1 {
+    font-size: 55px;
+    line-height: 70px;
+
+  }
+  
+  .fig-collectionsSvgs {
+    margin: 0 20px;
+    height: 45px;
+    width: 45px;
   }
 
 }

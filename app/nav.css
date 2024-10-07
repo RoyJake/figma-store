@@ -6,7 +6,6 @@
   padding: 5px 10px;
   height: 60px;
   background-color: #ffc700;
-
 }
 
 .menu-wrapper {
@@ -34,6 +33,48 @@
   transform: translateY(2px);
 }
 
+.menu{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
+
+.menu-list{
+  font-family: 'whyte Inktrap';
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.menu-list li{
+  list-style-type: none;
+  padding: 0  0 20px 0;
+}
+
+.menu-footer-list{
+  margin-top: 60px;
+  font-family: whyte;
+  text-transform: capitalize;
+}
+
+.menu-footer-list li{
+  margin: 30px 0;
+  list-style-type: none;
+font-weight: 500;
+  
+}
+
+.shop-button {
+  display: none;
+}
+
+.about-button {
+  display: none;
+}
+
 .search-icon {
   position: absolute;
   left: 55px;
@@ -44,7 +85,11 @@
   width: 165px;
 }
 
-.cart-counter {
+.account-icon {
+  display: none;
+}
+
+.cart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,5 +97,81 @@
   width: 55px;
   border: 2px solid #000;
   border-radius: 40px;
+}
+
+.cart-text {
+ display: none;
+}
+
+.cart-counter {
+  font-family: whyte;
+  font-weight: 600;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 47.89em) {
+  .nav {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 55.45em) {
+  .nav {
+    padding: 5px 30px;
+  }
+
+  .menu-wrapper {
+    display: none;
+  }
+
+  .shop-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: whyte;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 40px;
+    height: 40px;
+    width: 100px;
+  }
+
+  .about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: whyte;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 40px;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    left: 140px;
+  }
+
+  .search-icon {
+    left: 255px;
+  }
+
+  .account-icon {
+    position: absolute;
+    right: 150px;
+  }
+
+  .cart {
+    width: 100px;
+  }
+
+  .cart-text {
+    display: block;
+    font-family: whyte;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 10px;
+  }
 
 }
