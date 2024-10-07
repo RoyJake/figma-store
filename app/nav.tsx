@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Image from "next/image";
 
 import "./nav.css";
@@ -33,7 +33,7 @@ export default function NavBar() {
           <span className="cart-counter">0</span>
         </div>
       </nav>
-      
+
       <div className="menu">
         <ul className="menu-list">
           <li>shop</li>
