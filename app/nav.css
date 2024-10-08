@@ -2,10 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0;
   padding: 5px 10px;
   height: 60px;
+  width: 100vw;
   background-color: #ffc700;
+  z-index: 2;
 }
 
 .menu-wrapper {
@@ -33,38 +36,39 @@
   transform: translateY(2px);
 }
 
-.menu{
-  position: absolute;
-  height: 100vh;
+.menu {
+  position: fixed;
+  top: 60px;
+  height: calc(100vh - 60px);
   width: 100vw;
   background-color: #fff;
   padding: 10px;
   z-index: 1;
+  transform: translateY(-110%);
 }
 
-.menu-list{
-  font-family: 'whyte Inktrap';
+.menu-list {
+  font-family: "whyte Inktrap";
   font-size: 50px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.menu-list li{
+.menu-list li {
   list-style-type: none;
-  padding: 0  0 20px 0;
+  padding: 0 0 20px 0;
 }
 
-.menu-footer-list{
+.menu-footer-list {
   margin-top: 60px;
   font-family: whyte;
   text-transform: capitalize;
 }
 
-.menu-footer-list li{
+.menu-footer-list li {
   margin: 30px 0;
   list-style-type: none;
-font-weight: 500;
-  
+  font-weight: 500;
 }
 
 .shop-button {
@@ -100,7 +104,7 @@ font-weight: 500;
 }
 
 .cart-text {
- display: none;
+  display: none;
 }
 
 .cart-counter {
@@ -173,5 +177,4 @@ font-weight: 500;
     text-transform: uppercase;
     padding-right: 10px;
   }
-
 }

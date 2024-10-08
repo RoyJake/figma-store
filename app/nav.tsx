@@ -1,7 +1,13 @@
 "use client";
 
 import React from "react";
-// import { motion } from "framer-motion";
+import { useState } from "react";
+import {
+  motion,
+  useMotionValueEvent,
+  useScroll,
+  useAnimate,
+} from "framer-motion";
 import Image from "next/image";
 
 import "./nav.css";
@@ -9,14 +15,72 @@ import search_icon from "../public/svgs/search-icon.svg";
 import logo from "../public/svgs/logo.svg";
 import account from "../public/svgs/account.svg";
 
+const navBarVariant = {
+  hidden: { y: "-100%" },
+  vissible: { y: 0 },
+};
+
 export default function NavBar() {
+  const { scrollY } = useScroll();
+  const [navScope, animate] = useAnimate();
+  const [menuScope, animate1] = useAnimate();
+  const [isOpen, setIsOpen] = useState(false);
+  const [isHidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous: number = scrollY.getPrevious() ?? 0;
+    if (latest > previous) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
+
+  const menuBurgerAnimation = async function (isOpen: boolean) {
+    animate(".menuBar-top", {
+      transform: isOpen
+        ? ["translateY(0px)", "rotate(45deg)"]
+        : ["rotate(0deg)", "translateY(-2px)"],
+    });
+
+    animate(".menuBar-middle", {
+      opacity: isOpen ? 0 : 1,
+    });
+
+    animate(".menuBar-bottom", {
+      transform: isOpen
+        ? ["translateY(0px)", "rotate(-45deg)"]
+        : ["rotate(0deg)", "translateY(2px)"],
+    });
+
+    animate(navScope.current, { backgroundColor: isOpen ? "#fff" : "#ffc700", y: 0 });
+  };
+
+  const menuAnimation = async (isOpen: boolean) => {
+    animate1(menuScope.current, {
+      transform: isOpen ? "translateY(0%)" : "translateY(-110%)",
+    });
+  };
+
   return (
     <>
-      <nav className="nav">
-        <div className="menu-wrapper">
-          <div className="menu-bar menuBar-top"></div>
-          <div className="menu-bar menuBar-middle"></div>
-          <div className="menu-bar menuBar-bottom"></div>
+      <motion.nav
+        className="nav"
+        ref={navScope}
+        variants={navBarVariant}
+        animate={isHidden ? "hidden" : "vissible"}
+      >
+        <div
+          className="menu-wrapper"
+          onClick={() => {
+            setIsOpen(!isOpen);
+            menuBurgerAnimation(!isOpen);
+            menuAnimation(!isOpen);
+          }}
+        >
+          <motion.div className="menu-bar menuBar-top"></motion.div>
+          <motion.div className="menu-bar menuBar-middle"></motion.div>
+          <motion.div className="menu-bar menuBar-bottom"></motion.div>
         </div>
 
         <div className="shop-button">shop</div>
@@ -32,9 +96,9 @@ export default function NavBar() {
           <span className="cart-text">cart</span>
           <span className="cart-counter">0</span>
         </div>
-      </nav>
+      </motion.nav>
 
-      <div className="menu">
+      <div className="menu" ref={menuScope}>
         <ul className="menu-list">
           <li>shop</li>
           <li>about</li>

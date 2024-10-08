@@ -1,5 +1,7 @@
 .header {
-  /* position: relative; */
+  /* position: relative;
+  top: 60px; */
+  margin-top: 60px;
   height: 70vw;
   background-color: #ffc700;
   border-bottom: 4px solid black;
