@@ -178,3 +178,64 @@
     padding-right: 10px;
   }
 }
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 80em) {
+  .nav {
+    height: 80px;
+  }
+
+  .shop-button {
+    /* position: absolute; */
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #000;
+    height: 40px;
+    width: 100px;
+    left: 100px;
+  }
+
+  .about-button {
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #000;
+    height: 40px;
+    width: 100px;
+    left: 140px;
+  }
+
+  .search-icon {
+    left: 250px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .logo {
+    margin-left: 20px;
+    width: 225px;
+  }
+
+  .account-icon {
+    position: absolute;
+    right: 150px;
+  }
+
+  .cart {
+    
+    border: 2px solid #000;
+    height: 40px;
+    width: 100px;
+  }
+
+  .cart-text {
+    font-weight: 500;
+    font-size: 16px;
+    padding-right: 5px;
+  }
+
+  .cart-counter {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

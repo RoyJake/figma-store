@@ -29,6 +29,9 @@ export default function NavBar() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous: number = scrollY.getPrevious() ?? 0;
+    if (isOpen){ 
+      return
+    }
     if (latest > previous) {
       setHidden(true);
     } else {
