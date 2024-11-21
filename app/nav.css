@@ -101,6 +101,7 @@
   width: 55px;
   border: 2px solid #000;
   border-radius: 40px;
+  color: black;
 }
 
 .cart-text {
@@ -140,6 +141,13 @@
     border-radius: 40px;
     height: 40px;
     width: 100px;
+    color: black;
+    transition: all 0.3s ease;
+  }
+
+  .shop-button:hover {
+    color: white;
+    background-color: black;
   }
 
   .about-button {
@@ -155,7 +163,15 @@
     width: 100px;
     position: absolute;
     left: 140px;
+    color: black;
+    transition: all 0.3s ease;
   }
+
+  .about-button:hover {
+    color: white;
+    background-color: black;
+  }
+
 
   .search-icon {
     left: 255px;
@@ -168,6 +184,11 @@
 
   .cart {
     width: 100px;
+  }
+
+  .cart:hover {
+    color: white;
+    background-color: black;
   }
 
   .cart-text {
@@ -194,7 +215,11 @@
     height: 40px;
     width: 100px;
     left: 100px;
+    color: black;
+  
   }
+
+ 
 
   .about-button {
     font-weight: 500;
@@ -203,7 +228,9 @@
     height: 40px;
     width: 100px;
     left: 140px;
+    color: black;
   }
+
 
   .search-icon {
     left: 250px;
@@ -222,11 +249,13 @@
   }
 
   .cart {
-    
     border: 2px solid #000;
     height: 40px;
     width: 100px;
+    transition: all 0.3s ease;
   }
+
+ 
 
   .cart-text {
     font-weight: 500;

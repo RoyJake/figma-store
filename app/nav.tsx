@@ -9,6 +9,7 @@ import {
   useAnimate,
 } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import "./nav.css";
 import search_icon from "../public/svgs/search-icon.svg";
@@ -29,8 +30,8 @@ export default function NavBar() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous: number = scrollY.getPrevious() ?? 0;
-    if (isOpen){ 
-      return
+    if (isOpen) {
+      return;
     }
     if (latest > previous) {
       setHidden(true);
@@ -56,7 +57,10 @@ export default function NavBar() {
         : ["rotate(0deg)", "translateY(2px)"],
     });
 
-    animate(navScope.current, { backgroundColor: isOpen ? "#fff" : "#ffc700", y: 0 });
+    animate(navScope.current, {
+      backgroundColor: isOpen ? "#fff" : "#ffc700",
+      y: 0,
+    });
   };
 
   const menuAnimation = async (isOpen: boolean) => {
@@ -86,19 +90,25 @@ export default function NavBar() {
           <motion.div className="menu-bar menuBar-bottom"></motion.div>
         </div>
 
-        <div className="shop-button">shop</div>
-        <div className="about-button">about</div>
+        <Link className="shop-button" href="#figmaCollection-header">
+          shop
+        </Link>
+        <Link className="about-button" href="about/page">
+          about
+        </Link>
 
         <Image className="search-icon" src={search_icon} alt="search-icon" />
 
-        <Image className="logo" src={logo} alt="logo" />
+        <Link id="logo-link" href="/">
+          <Image className="logo" src={logo} alt="logo" />
+        </Link>
 
         <Image className="account-icon" src={account} alt="account-icon" />
 
-        <div className="cart">
-          <span className="cart-text">cart</span>
+        <Link className="cart" href=''>
+          <span className="cart-text">bag</span>
           <span className="cart-counter">0</span>
-        </div>
+        </Link>
       </motion.nav>
 
       <div className="menu" ref={menuScope}>

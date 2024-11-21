@@ -547,7 +547,7 @@ export default function Home() {
       </svg>
 
       <section className="figmaCollection-section">
-        <h1>
+        <h1 id='figmaCollection-header'>
           <span>figma&#39;s</span>
           <Image
             className="fig-collectionsSvgs"
