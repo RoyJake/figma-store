@@ -21,7 +21,7 @@ export default function Home() {
           <motion.div
             className="carousel"
             drag="x"
-            dragConstraints={{ right: 0, left: -400 }}
+            dragConstraints={{ right: 0, left: -4000 }}
           >
             <div className="header-image-containers">
               <svg

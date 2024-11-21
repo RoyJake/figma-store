@@ -113,11 +113,18 @@
   height: 65%;
   width: 100%;
 }
+
 .grid_images {
   border-radius: 30px;
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.grid_box:hover {
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .grid_text_box {
