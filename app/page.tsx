@@ -620,8 +620,8 @@ export default function Home() {
       <section className="grid_section">
         <div className="grid">
           {figmaCollectionImages.map((image, index) => (
-            <div key={index} className={`box_${index} grid_box`}>
-              <Image
+            <div key={index} id={`box_${index}`} className='grid_box'>
+              <img
                 className="grid_images "
                 src={image.src}
                 alt={`grid_image_${index}`}

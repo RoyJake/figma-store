@@ -1,5 +1,5 @@
 import zero from "../public/images/magazine.png";
-import one from "../public/images/glyph_Tee.jpg";
+import one from "../public/images/glyph_Tee.webp";
 import two from "../public/images/nalgene.jpg";
 import three from "../public/images/independent.jpg";
 import four from "../public/images/doodle_tee.jpg";
