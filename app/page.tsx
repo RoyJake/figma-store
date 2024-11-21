@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import NavBar from "./ui/nav.tsx";
 import "./page.css";
 import headerImages from "./imageArray.tsx";
 import figma_collections from "./figmaCoSvgs.tsx";
@@ -10,12 +11,12 @@ import {
   figmaCollectionImages,
   productName_N_Price,
 } from "./figmaCoImages.tsx";
-import { footerSvgs, footerColors } from "./footerSvg.tsx";
+import { footerSvgs, footerColors } from "./ui/footerSvg.tsx";
 
 export default function Home() {
-  
   return (
     <>
+      <NavBar/>
       <header className="header">
         <div className="carousel-container">
           <motion.div
@@ -26,8 +27,6 @@ export default function Home() {
             <div className="header-image-containers">
               <svg
                 className="headerSvgs one-svg"
-                // width="1124"
-                // height="612"
                 viewBox="0 0 1124 612"
                 fill="none"
               >
@@ -547,7 +546,7 @@ export default function Home() {
       </svg>
 
       <section className="figmaCollection-section">
-        <h1 id='figmaCollection-header'>
+        <h1 id="figmaCollection-header">
           <span>figma&#39;s</span>
           <Image
             className="fig-collectionsSvgs"
@@ -620,7 +619,7 @@ export default function Home() {
       <section className="grid_section">
         <div className="grid">
           {figmaCollectionImages.map((image, index) => (
-            <div key={index} id={`box_${index}`} className='grid_box'>
+            <div key={index} id={`box_${index}`} className="grid_box">
               <img
                 className="grid_images "
                 src={image.src}
@@ -682,12 +681,7 @@ export default function Home() {
         </ul>
 
         <button>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="black"
-          >
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="black">
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -702,7 +696,8 @@ export default function Home() {
           animate={{ x: ["0%", "-100%"] }}
           transition={{ ease: "linear", duration: 10, repeat: Infinity }}
         >
-          marvelously considered collection of objects for our time on figma&#39;s
+          marvelously considered collection of objects for our time on
+          figma&#39;s
         </motion.div>
       </footer>
     </>

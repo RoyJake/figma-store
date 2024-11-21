@@ -1,5 +1,29 @@
-div{
- height: 100vh;
+main{
+ display: flex;
+ justify-content: center;
+}
+
+
+.about-image{
+ position: absolute;
+ top: 80px;
+ height: 80vw;
+ width: 80vw;
+ stroke: black;
+ stroke-width: 4px;
+}
+
+.about-header{
+ position: absolute;
+ top: 120vw;
  width: 100vw;
- background: red;
+ padding-left: 20px;
+}
+
+p{
+ font-family: whyte;
+ font-weight: 500;
+ position: absolute;
+ top: 135vw;
+ padding-left: 20px;
 }

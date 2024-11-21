@@ -12,9 +12,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import "./nav.css";
-import search_icon from "../public/svgs/search-icon.svg";
-import logo from "../public/svgs/logo.svg";
-import account from "../public/svgs/account.svg";
+import search_icon from "../../public/svgs/search-icon.svg";
+import logo from "../../public/svgs/logo.svg";
+import account from "../../public/svgs/account.svg";
 
 const navBarVariant = {
   hidden: { y: "-100%" },
@@ -93,7 +93,7 @@ export default function NavBar() {
         <Link className="shop-button" href="#figmaCollection-header">
           shop
         </Link>
-        <Link className="about-button" href="about/page">
+        <Link className="about-button" href="./about">
           about
         </Link>
 
