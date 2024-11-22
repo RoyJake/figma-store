@@ -90,7 +90,7 @@ export default function NavBar() {
           <motion.div className="menu-bar menuBar-bottom"></motion.div>
         </div>
 
-        <Link className="shop-button" href="#figmaCollection-header">
+        <Link className="shop-button" href="./#figmaCollection-header">
           shop
         </Link>
         <Link className="about-button" href="./about">
