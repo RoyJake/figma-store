@@ -254,17 +254,17 @@ export default function About() {
 
         <section id="faq">
           <h2>FAQ</h2>
-          <div>
+          <div id='faq-div'>
           <ul>
             <li>
-              <li id="faq1">How does your apparel fit?</li>
+              <div id="faq1">How does your apparel fit?</div>
               <p>
                 Our sizing is unisex. For a more tailored fit, we recommend that
                 you size down.
               </p>
             </li>
             <li>
-              <li id="faq2">Where do you ship?</li>
+              <div id="faq2">Where do you ship?</div>
               <p>We currently ship to all countries except the following:</p>
               <ul>
                 <li>Afghanistan</li>
@@ -330,24 +330,24 @@ export default function About() {
               </p>
             </li>
             <li>
-              <li id="faq3">When will I get my order?</li>
+              <div id="faq3">When will I get my order?</div>
               <p>
-                Your order will ship within 10 business days. You’ll get an
+                Your order will ship within 10 business days. You&apos;ll get an
                 e-mail with the tracking info to follow it along the way.
                 Shipping timelines will vary based on location, but you can
                 expect your order to arrive 2-10 days after shipment.
               </p>
             </li>
             <li>
-              <li id="faq4">What if my package never came?</li>
+              <div id="faq4">What if my package never came?</div>
               <p>
                 Reach out to thefigmastore@harperandscott.com if you place an
-                order and don’t receive a shipping notice within 5 business days
-                OR if your order hasn’t arrived 10 days after it has shipped.
+                order and don&apos;t receive a shipping notice within 5 business days
+                OR if your order hasn&apos;t arrived 10 days after it has shipped.
               </p>
             </li>
             <li>
-              <li id="faq5">Can I edit or cancel my order once it’s placed?</li>
+              <div id="faq5">Can I edit or cancel my order once it&apos;s placed?</div>
               <p>
                 You are unable to edit your order once placed, but if you would
                 like to cancel it, please connect with
@@ -355,7 +355,7 @@ export default function About() {
               </p>
             </li>
             <li>
-              <li id="faq6">How do I contact support?</li>
+              <div id="faq6">How do I contact support?</div>
               <p>
                 You can contact support by e-mailing
                 thefigmastore@harperandscott.com.
@@ -367,8 +367,9 @@ export default function About() {
         <section id="customer-care">
           <h2>CUSTOMER CARE</h2>
           <ul>
+            
             <li>
-              <li id="customer-care1">Shipping</li>
+              <div id="customer-care1">Shipping</div>
               <p>
                 Once you&apos;ve made a purchase, an e-mail confirmation will be sent
                 to the e-mail address you provided. This e-mail acts as an
@@ -391,9 +392,10 @@ export default function About() {
                 delivery.
               </p>
             </li>
+            
 
             <li>
-              <li id="customer-care2">Returns</li>
+              <div id="customer-care2">Returns</div>
               <p>
                 We currently do not accept returns and are unable to edit your
                 order once placed. If you would like to cancel your order and
@@ -402,7 +404,7 @@ export default function About() {
               </p>
             </li>
             <li>
-              <li id="customer-care3">Contact Us</li>
+              <div id="customer-care3">Contact Us</div>
               <p>
                 You can contact support by emailing
                 thefigmastore@harperandscott.com.
