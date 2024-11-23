@@ -1,57 +1,313 @@
-main{
- display: flex;
- justify-content: center;
+.nav {
+  background-color: white;
 }
 
-
-.about-image{
- position: absolute;
- top: 80px;
- height: 80vw;
- width: 80vw;
- stroke: black;
- stroke-width: 4px;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  font-family: whyte;
+  overflow: hidden;
 }
 
-.about-header{
- font-family: "whyte Inktrap";
- position: absolute;
- top: 120vw;
- width: 100vw;
- padding-left: 20px;
+section#first-section {
+  margin-top: 80px;
+}
+.about-image {
+  height: 80vw;
+  width: 80vw;
+  stroke: black;
+  stroke-width: 4px;
 }
 
-p{
- font-family: whyte;
- font-weight: 200;
- font-size: 22px;
- line-height: 30px;
- position: absolute;
- top: 135vw;
- padding: 0 20px;
+.about-header {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: "whyte Inktrap";
+  width: 100%;
 }
 
-.badge{
- position: absolute;
- top: 210vw;
+p {
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 30px;
 }
 
-#about-donation{
- font-family: "whyte Inktrap";
- position: absolute;
- top: 300vw;
- width: 100vw;
- padding-left: 20px;
- text-transform: uppercase;
- line-height: 35px;
+.about-badge {
+  margin-top: 80px;
+  width: 200px;
 }
 
-#donation-para{
- font-family: whyte;
- font-weight: 200;
- font-size: 22px;
- line-height: 30px;
- position: absolute;
- top: 345vw;
- padding: 0 20px;
+section#donation {
+  margin-top: 100px;
+}
+
+#about-donation {
+  font-family: "whyte Inktrap";
+  text-transform: uppercase;
+  line-height: 35px;
+}
+
+#donation-para {
+  font-family: whyte;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.TIST-link {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+
+section#faq {
+  margin-top: 200px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+ul li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+li#faq1,
+li#faq2,
+li#faq3,
+li#faq4,
+li#faq5,
+li#faq6 {
+  background-size: 30px 20px;
+  background-repeat: no-repeat;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 50px;
+  height: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+li#faq1 {
+  background-image: url("../../public/aboutsvgs/Rectangle.png");
+}
+
+li#faq2 {
+  background-image: url("../../public/aboutsvgs/Rectangle_10_1000x.png");
+}
+
+li#faq3 {
+  background-image: url("../../public/aboutsvgs/Union_1000x.png");
+}
+
+li#faq4 {
+  background-image: url("../../public/aboutsvgs/red-wave_1000x.png");
+}
+
+li#faq5 {
+  background-image: url("../../public/aboutsvgs/Rectangle_16_1000x.png");
+}
+
+li#faq6 {
+  background-image: url("../../public/aboutsvgs/Group_51_1000x.png");
+}
+
+ul li p {
+  font-size: 20px;
+  line-height: 25px;
+}
+ul li ul {
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+section#customer-care {
+  margin-top: 200px;
+}
+
+li#customer-care1,
+li#customer-care2,
+li#customer-care3 {
+  background-size: 30px 20px;
+  background-repeat: no-repeat;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 50px;
+  height: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+li#customer-care1 {
+  background-image: url("../../public/aboutsvgs/red-wave_1000x.png");
+}
+
+li#customer-care1 ~ p {
+  margin-bottom: 20px;
+}
+
+li#customer-care2 {
+  background-image: url("../../public/aboutsvgs/Group_51_1000x.png");
+}
+
+li#customer-care3 {
+  background-image: url("../../public/aboutsvgs/Rectangle.png");
+}
+
+li#customer-care3 ~ p {
+  margin-bottom: 100px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 48em) {
+  section#first-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-image {
+    height: 40vw;
+    width: 40vw;
+    stroke: black;
+    stroke-width: 4px;
+  }
+
+  section#first-section div {
+    width: 50vw;
+    padding: 0 30px;
+  }
+
+  .about-header {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  /* styling for the donation section */
+
+  section#donation {
+    display: flex;
+  }
+
+  #about-donation {
+    font-size: 45px;
+    line-height: 44px;
+    padding-right: 50px;
+  }
+
+  #donation-para {
+    font-size: 27px;
+    line-height: 36px;
+    padding-right: 50px;
+    width: 50vw;
+  }
+
+  .TIST-link {
+    font-size: 27px;
+  }
+
+  /* styling for the FAQ section */
+
+  section#faq {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 50px;
+    width: 40vw;
+  }
+
+  section#faq div {
+    width: 50vw;
+  }
+
+  li#faq1 {
+    margin-top: 0;
+  }
+
+  /* styling for the customer care section */
+
+  section#customer-care {
+    display: flex;
+  }
+
+  section#customer-care ul {
+    width: 50vw;
+  }
+
+  li#customer-care1 {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  main {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .about-image {
+    width: 50%;
+  }
+
+  section#first-section div {
+    width: 50%;
+    padding: 0 50px;
+  }
+
+  .about-header {
+    font-size: 55px;
+  }
+
+  section#first-section div p {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  /* styling for the donation section */
+
+  section#donation div {
+    width: 50%;
+    padding: 0 50px;
+  }
+
+  #about-donation {
+    padding-left: 60px;
+    width: 50%;
+  }
+
+  #donation-para {
+    padding-right: 50px;
+    width: 100%;
+  }
+
+  /* styling for the  FAQ section */
+
+  h2 {
+    padding-left: 60px;
+    width: 50%;
+  }
+
+  section#faq div {
+    width: 50%;
+    padding: 0 50px;
+  }
+
+  /* styling for the customer care section */
+
+  section#customer-care ul {
+    width: 50%;
+    padding: 0 50px;
+  }
 }

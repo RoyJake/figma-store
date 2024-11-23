@@ -90,7 +90,13 @@ export default function NavBar() {
           <motion.div className="menu-bar menuBar-bottom"></motion.div>
         </div>
 
-        <Link className="shop-button" href="./#figmaCollection-header">
+        <Link
+          className="shop-button"
+          href=""
+          onClick={() => {
+            window.location.href = "/#figmaCollection-section";
+          }}
+        >
           shop
         </Link>
         <Link className="about-button" href="./about">
@@ -99,13 +105,19 @@ export default function NavBar() {
 
         <Image className="search-icon" src={search_icon} alt="search-icon" />
 
-        <Link id="logo-link" href="/">
+        <Link
+          id="logo-link"
+          href=""
+          onClick={() => {
+            window.location.href = "/";
+          }}
+        >
           <Image className="logo" src={logo} alt="logo" />
         </Link>
 
         <Image className="account-icon" src={account} alt="account-icon" />
 
-        <Link className="cart" href=''>
+        <Link className="cart" href="">
           <span className="cart-text">bag</span>
           <span className="cart-counter">0</span>
         </Link>
@@ -113,8 +125,22 @@ export default function NavBar() {
 
       <div className="menu" ref={menuScope}>
         <ul className="menu-list">
-          <li>shop</li>
-          <li>about</li>
+          <li>
+            <Link
+              className="shop-menu-button"
+              href=""
+              onClick={() => {
+                window.location.href = "/#figmaCollection-section";
+              }}
+            >
+              shop
+            </Link>
+          </li>
+          <li>
+            <Link className="about-menu-button" href="./about">
+              about
+            </Link>
+          </li>
         </ul>
         <ul className="menu-footer-list">
           <li>FAQ</li>

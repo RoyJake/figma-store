@@ -1,0 +1,118 @@
+/* styling for the footer section of the home page */
+.footer {
+ position: relative;
+ padding: 55px 20px;
+ overflow: hidden;
+}
+
+.footerLogo {
+ position: relative;
+ margin: 0 auto 25px;
+ height: 180px;
+ width: 180px;
+}
+
+.footer h2 {
+ font-family: whyte;
+ font-weight: 600;
+ font-size: 37px;
+ margin-bottom: 25px;
+}
+
+ul.footer-list {
+ list-style-type: none;
+ font-family: whyte;
+ font-weight: 500;
+}
+
+ul.footer-list li {
+ padding: 10px 0;
+}
+
+ul.footer-socials {
+ margin: 45px 0;
+
+ list-style-type: none;
+ font-family: whyte;
+ font-weight: 500;
+}
+
+ul.footer-socials li {
+ padding: 10px 0;
+}
+
+.footer button {
+ position: absolute;
+ bottom: 200px;
+ right: 20px;
+ background-color: transparent;
+ border: none;
+}
+
+.marquee {
+ display: inline-block;
+ white-space: nowrap;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+
+ font-family: whyte;
+ font-size: 30px;
+ font-weight: 600;
+ text-transform: uppercase;
+ line-height: 35px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 47.9em) {
+  /* styles for the footer section of the home page */
+
+  .home-footer {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 55px 20px;
+ }
+
+ .footerLogo {
+   margin: 0 50px;
+   height: 220px;
+   width: 220px;
+ }
+
+ .home-footer h2 {
+   font-size: 30px;
+   margin-right: 40px;
+ }
+
+ ul.footer-socials {
+   display: flex;
+   margin: 45px 0;
+   font-size: 25px;
+   font-weight: 400;
+ }
+
+ ul.footer-socials li {
+   padding: 10px 10px;
+ }
+
+ .home-footer button {
+   bottom: 150px;
+   right: 60px;
+ }
+
+ .marquee {
+   display: inline-block;
+   white-space: nowrap;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+
+   font-family: whyte;
+   font-size: 30px;
+   font-weight: 600;
+   text-transform: uppercase;
+   line-height: 35px;
+ }
+}

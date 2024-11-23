@@ -39,7 +39,7 @@
 .menu {
   position: fixed;
   top: 60px;
-  height: calc(100vh - 60px);
+  height: calc(110vh - 60px);
   width: 100vw;
   background-color: #fff;
   padding: 10px;
@@ -54,10 +54,12 @@
   text-transform: capitalize;
 }
 
-.menu-list li {
+.menu-list li .shop-menu-button, .menu-list li .about-menu-button{
   list-style-type: none;
   padding: 0 0 20px 0;
+  color: black;
 }
+
 
 .menu-footer-list {
   margin-top: 60px;
