@@ -370,12 +370,12 @@ export default function About() {
             <li>
               <li id="customer-care1">Shipping</li>
               <p>
-                Once you’ve made a purchase, an e-mail confirmation will be sent
+                Once you&apos;ve made a purchase, an e-mail confirmation will be sent
                 to the e-mail address you provided. This e-mail acts as an
                 invoice and includes your order number.
               </p>
               <p>
-                Once your order is placed, it’ll ship from our warehouse within
+                Once your order is placed, it&apos;ll ship from our warehouse within
                 2-5 business days. Orders placed after 11:00 AM(EST) may be
                 processed the next business day, and orders placed on weekends
                 and holidays will be processed the following business day
@@ -386,7 +386,7 @@ export default function About() {
                 Depending on your location, your order will be shipping from the
                 United Kingdom, Ireland, or the United States. You will not need
                 to pay customs on your orders. Once your order has been shipped,
-                you will receive an e-mail with your shipment’s tracking
+                you will receive an e-mail with your shipment&apos;s tracking
                 information, allowing you to keep tabs on the progress of your
                 delivery.
               </p>
