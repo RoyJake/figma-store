@@ -323,7 +323,7 @@ export default function About() {
                 <li>Yemen</li>
               </ul>
               <p>
-                We'll be working with our vendors to expand warehousing and
+                We&apos;ll be working with our vendors to expand warehousing and
                 shipping operations so that we can bring The Figma Store to more
                 countries in the future. Stay tuned for updates and thank you
                 for your understanding!
