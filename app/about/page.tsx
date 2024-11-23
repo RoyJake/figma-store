@@ -281,7 +281,7 @@ export default function About() {
                 <li>Chad</li>
                 <li>Christmas Islands</li>
                 <li>Cocos (Keeling) Islds</li>
-                <li>Congo – Kinshasa</li>
+                <li>Congo Kinshasa</li>
                 <li>Cook Islands</li>
                 <li>Cuba</li>
                 <li>Curaçao</li>
