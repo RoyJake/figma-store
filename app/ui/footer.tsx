@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { footerSvgs, footerColors } from "../lib/footerSvg.tsx";
+import { footerSvgs, footerColors } from "../lib/footerSvg.ts";
 import "./footer.css";
 
 export default function Footer() {

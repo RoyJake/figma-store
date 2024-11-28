@@ -128,7 +128,7 @@ export default function NavBar() {
           <li>
             <Link
               className="shop-menu-button"
-              href=""
+              href="/#figmaCollection-section"
               onClick={() => {
                 window.location.href = "/#figmaCollection-section";
               }}

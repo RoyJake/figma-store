@@ -1,0 +1,118 @@
+.nav {
+  background-color: white;
+}
+
+main {
+  font-family: whyte;
+  margin-top: 60px;
+  padding-block: 50px;
+  overflow: hidden;
+}
+
+section#product_info {
+  margin: 0 20px;
+}
+
+section#product_info h1#layers {
+  width: 95px;
+  height: 35px;
+  border-radius: 20px;
+  place-content: center;
+  text-align: center;
+  background-color: #0fa958;
+  font-size: 14px;
+}
+
+section#product_info h2 {
+  margin-top: 25px;
+  font-family: "whyte Inktrap";
+  font-size: 32px;
+  line-height: 40px;
+}
+
+section#product_info p {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+section#slider_section {
+}
+
+div#product_slider {
+  display: flex;
+  width: fit-content;
+  margin: 30px 0;
+}
+
+div.product_images {
+  height: 95vw;
+  width: 80vw;
+  margin: 0 10px;
+}
+
+div.product_images .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+section#product_order {
+  margin: 0 20px;
+}
+
+section#product_order a {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
+}
+
+#product_size {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  width: 90vw;
+}
+
+#product_size div {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 50px;
+  place-content: center;
+  text-align: center;
+  font-weight: 700;
+  /* margin-left: 20px ; */
+}
+
+#item_add_sub_counter {
+  display: flex;
+}
+
+#item_add_sub_counter div {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 50px;
+  place-content: center;
+  text-align: center;
+  font-weight: 700;
+}
+
+#item_add_sub_counter div#counter {
+  border: none;
+}
+
+#product_price {
+ height: 50px;
+ width: 90vw;
+ border: 2px solid black;
+ border-radius: 50px;
+ place-content: center;
+ text-align: center;
+ font-weight: 700;
+ margin-top: 20px;
+ margin-bottom: 70px;
+}
