@@ -10,7 +10,7 @@ interface ProductNameState {
 }
 
 const initialState: ProductNameState = {
- productName: '',
+ productName: 'prompt_magazine',
 }
 
 const productSlice = createSlice({
