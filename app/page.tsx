@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -25,7 +24,7 @@ export default function Home() {
   function setProductName(event: React.MouseEvent<HTMLElement>) {
     const target = event.currentTarget as HTMLElement;
     const classList = target.className.split(/ (.+)/);
-    let product_name = classList[1];
+    const product_name = classList[1];
     dispatch(productUpdate(product_name));
     // console.log(productName)
   }

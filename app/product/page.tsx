@@ -33,8 +33,8 @@ export default function Product() {
             drag="x"
             dragConstraints={{ right: 0, left: -1300 }}
           >
-            {Products[product].productImages.map((image) => (
-              <div className="product_images">
+            {Products[product].productImages.map((image, index) => (
+              <div key={index} className="product_images">
                 <Image
                   className="image"
                   src={image}
@@ -68,8 +68,8 @@ export default function Product() {
       <main id="large_screen">
         <section id="showcase_section">
           <div id="product_showcase">
-            {Products[product].productImages.map((image) => (
-              <div className="ls_product_images">
+            {Products[product].productImages.map((image, index) => (
+              <div key={index} className="ls_product_images">
                 <Image
                   className="image"
                   src={image}
