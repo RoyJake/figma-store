@@ -20,7 +20,7 @@ export default function Product() {
   return (
     <>
       <NavBar />
-      <main>
+      <main id="small_screen">
         <section id="product_info">
           <h1 id="layers">LAYERS</h1>
           <h2>{Products[product].productName}</h2>
@@ -49,19 +49,59 @@ export default function Product() {
 
         <section id="product_order">
           <a href="">Size guide</a>
-          <div id='product_size'>
+          <div id="product_size">
             <div>S</div>
             <div>M</div>
             <div>L</div>
             <div>XL</div>
             <div>2XL</div>
           </div>
-          <div id='item_add_sub_counter'>
+          <div id="item_add_sub_counter">
             <div id="sub">-</div>
             <div id="counter">1</div>
             <div id="add">+</div>
           </div>
           <div id="product_price">ADD $45.00</div>
+        </section>
+      </main>
+
+      <main id="large_screen">
+        <section id="showcase_section">
+          <div id="product_showcase">
+            {Products[product].productImages.map((image) => (
+              <div className="ls_product_images">
+                <Image
+                  className="image"
+                  src={image}
+                  alt=""
+                  width={300}
+                  height={300}
+                ></Image>
+              </div>
+            ))}
+          </div>
+          <div id='main_showcase'></div>
+
+        </section>
+
+        <section id="product_info">
+          <h1 id="layers">LAYERS</h1>
+          <h2>{Products[product].productName}</h2>
+          <a href="">Size guide</a>
+          <div id="product_size">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>2XL</div>
+          </div>
+          <div id="item_add_sub_counter">
+            <div id="sub">-</div>
+            <div id="counter">1</div>
+            <div id="add">+</div>
+          </div>
+          <div id="product_price">ADD $45.00</div>
+          <p>{Products[product].productDescription}</p>
         </section>
       </main>
       <Footer />

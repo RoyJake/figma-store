@@ -118,7 +118,7 @@ export const productName_N_Price = [
   { name: "new! doodle hoodie", price: 45, route: 'doodle_hoodie' },
   { name: "new! chunky glyph longsleeve", price: 30, route: 'chunky_glyph_longsleeve' },
   { name: "new! butterfly tote", price: 25, route: 'butterfly_tote' },
-  { name: "new! make your mark(er) pack", price: 22, route: 'mark(er)_pack' },
+  { name: "new! make your mark(er) pack", price: 22, route: 'marker_pack' },
   { name: "new! round corners graph notebook", price: 10, route: 'corners_graph_notebook' },
   { name: "new! tidy up crewneck", price: 40, route: 'tidy_up_crewneck' },
   { name: "new! all smiles dad hat", price: 20, route: 'smiles_dad_hat' },
