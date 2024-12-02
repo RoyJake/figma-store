@@ -18,10 +18,10 @@ export default function Product() {
   );
   const product: ProductKey = productName as ProductKey;
   const imageRef = useRef(null);
-  const [src, setSrc] = useState(Products[product].productImages[0]);
+  const [src, setSrc] = useState<string>(Products[product].productImages[0]);
 
-  const sourceSetting = (event: any) => {
-    let srv_value = event.target.src;
+  const sourceSetting = (event: React.MouseEvent<HTMLImageElement>) => {
+    const srv_value = event.currentTarget.src;
     setSrc(srv_value);
   };
 
