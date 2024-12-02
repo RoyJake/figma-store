@@ -1,4 +1,5 @@
 "use client";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import Image from "next/image";
@@ -16,7 +17,14 @@ export default function Product() {
     (state: RootState) => state.product.productName
   );
   const product: ProductKey = productName as ProductKey;
-  console.log(Products[product].productName);
+  const imageRef = useRef(null);
+  const [src, setSrc] = useState(Products[product].productImages[0]);
+
+  const sourceSetting = (event: any) => {
+    let srv_value = event.target.src;
+    setSrc(srv_value);
+  };
+
   return (
     <>
       <NavBar />
@@ -71,6 +79,8 @@ export default function Product() {
             {Products[product].productImages.map((image, index) => (
               <div key={index} className="ls_product_images">
                 <Image
+                  ref={imageRef}
+                  onClick={sourceSetting}
                   className="image"
                   src={image}
                   alt=""
@@ -80,8 +90,9 @@ export default function Product() {
               </div>
             ))}
           </div>
-          <div id='main_showcase'></div>
-
+          <div id="main_showcase">
+            <Image className='image' src={src} alt="" height={499} width={499}></Image>
+          </div>
         </section>
 
         <section id="product_info">
